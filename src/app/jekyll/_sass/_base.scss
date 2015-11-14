@@ -1,0 +1,41 @@
+
+// headers are all sans serif; body is serif
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family-sans-serif;
+}
+
+.jumbotron {
+	color:$vizsec_light;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.highlight {
+	color: $vizsec_highlight; 
+}
+
+.navbar-brand > img {
+	height:50px;
+}
+
+.navbar-right {
+	font-family: $font-family-sans-serif;
+	font-size:14pt;
+}
+
+.navbar-right a {
+	color:#fff;
+}
+
+.nav > li > a {
+	padding-right:0px;
+}
+
+.nav-link-sep {
+	padding-left:20px;
+	padding-right:-10px;
+}
+
+.page-content {
+	padding-top:100px;
+}

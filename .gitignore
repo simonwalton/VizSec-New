@@ -1,1 +1,10 @@
 .DS_Store
+src/node_modules/
+*.swp
+*.lock
+*.map
+src/app/jekyll/_site/
+src/bower_components
+src/deploy
+src/.jekyll/
+src/.sass-cache/
