@@ -4,9 +4,13 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font-family-sans-serif;
 }
 
+h2, h3 {
+	margin-bottom:20px;
+}
+
 .jumbotron {
 	color:$vizsec_light;
-	padding-top:20px;
+	padding-top:100px;
 	padding-bottom:20px;
 }
 
@@ -36,6 +40,15 @@ h1, h2, h3, h4, h5, h6 {
 	padding-right:-10px;
 }
 
-.page-content {
-	padding-top:100px;
+.committee.name {
+	font-weight:bold;
+}
+
+.committee.affiliation {
+	color: $vizsec_highlight;
+	font-size:floor(($font-size-base * 0.85));
+}
+
+.committee.role {
+	font-style:italic;
 }
