@@ -11,33 +11,4 @@ The purpose of VizSec is to explore effective and scalable visual interfaces for
 More information on format and submissions will be coming soon.</p>
 <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
 
-
-<div class="row">
-	<div class="col-md-6">
-		<h3>Organising Committee</h3>
-		<ul>
-		{% for member in site.data.committee %}
-			<li>
-				<span class="committee name">{{ member.name }}</span>, 
-				<span class="committee role">{{ member.role }}</span><br>
-				<span class="committee affiliation">{{ member.affiliation }}</span>
-			</li>
-		{% endfor %}
-		</ul>
-	</div>
-	<div class="col-md-6" >
-		<h3>Steering Committee</h3>
-		<div style="column-count:2">
-			<ul >
-			{% for member in site.data.steering %}
-				<li>
-					<span class="committee name">{{ member.name }}</span><br>
-					<span class="committee affiliation">{{ member.affiliation }}</span>
-				</li>
-			{% endfor %}
-			</ul>
-		</div>
-	</div>
-</div>
-
-
+{% include committee.html %}

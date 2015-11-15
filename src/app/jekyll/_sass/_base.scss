@@ -12,6 +12,18 @@ h4 {
 	margin-bottom:10px;
 }
 
+
+
+.footer {
+	padding: 20px;
+	text-align:center;
+	color: $vizsec_light;
+	margin-top:20px;
+	background-color: $vizsec_dark; 
+	height:80px;
+	border-top: 7px solid $vizsec_highlight; 
+}
+
 .page-content-default {
 	margin-top: floor(($navbar-height + 50));
 }
@@ -93,5 +105,26 @@ a:active {
 }
 
 .committee.role {
+	font-style:italic;
+}
+
+.vizsec-event-meta > dd {
+	border-bottom: 1px solid red;
+	padding:10px;
+	margin-bottom:10px;
+}
+
+.vizsec-event-meta.title {
+	font-style:italic;
+}
+
+.vizsec-event-meta.location {
+}
+
+.vizsec-event-meta.date {
+	font-style:italic;
+}
+
+.vizsec-event-meta.acceptance {
 	font-style:italic;
 }
