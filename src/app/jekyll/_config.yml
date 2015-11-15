@@ -1,12 +1,10 @@
 # Site settings
-title: Your awesome title
+title: VizSec
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The IEEE Symposium on Visualization for Cyber Security (VizSec) is a forum that brings together researchers and practitioners from academia, government, and industry to address the needs of the cybersecurity community through new and insightful visualization and analysis techniques. 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://vizsec.org" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 

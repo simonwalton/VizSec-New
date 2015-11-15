@@ -20,9 +20,10 @@ module.exports = function (grunt) {
 	project: {
 		app: ['app'],
 		jekyll: ['<%= project.app %>/jekyll'],
-		assets: ['<%= project.app %>/assets'],
-		css: ['<%= project.assets %>/sass/style.scss']
+		assets: ['<%= project.jekyll %>/assets'],
+		sass: ['<%= project.assets %>/sass/_bootstrap_include.scss']
 	},
+	// task for compiling sass independently of jekyll
 	sass: {
 		dev: {
 			options: {
@@ -30,7 +31,7 @@ module.exports = function (grunt) {
 				compass: false
 			},
 			files: {
-				'<%= project.assets %>/css/style.css':'<%= project.css %>'
+				'<%= project.assets %>/assets/css/style.css':'<%= project.bootstrap_sass %>'
 			}
 		}
 	},
@@ -56,11 +57,11 @@ module.exports = function (grunt) {
 		src: ['bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
 			'bower_components/jquery/dist/jquery.min.js'
 		],
-		dest: '<%= project.jekyll %>/js/',
+		dest: '<%= project.jekyll %>/assets/js/',
 	    flatten: true,
 		expand:true	
-	  }
-    /*  staticFiles: {
+	  },
+	     /*  staticFiles: {
         src: ['source/static/*'],
         dest: 'deploy/'
       },
@@ -140,19 +141,6 @@ module.exports = function (grunt) {
 			}
 		}
 	},*/
-	min: {
-		app: {
-			src: ['source/assets/js/bootstrap.js'],
-			dest: 'deploy/js/bootstrap.min.js'
-		}
-	},
-	mincss: {
-		'deploy/css/style.min.css': [
-			'source/assets/css/bootstrap.min.css',
-			'source/assets/css/bootstrap-responsive.min.css',
-			'source/assets/css/app.css'
-		]
-	},
 	jshint: {
 		options: {
 			curly: true,

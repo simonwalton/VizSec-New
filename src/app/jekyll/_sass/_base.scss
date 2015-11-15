@@ -12,6 +12,7 @@ h2, h3 {
 	color:$vizsec_light;
 	padding-top:100px;
 	padding-bottom:20px;
+	border-bottom: 7px solid $vizsec_highlight; 
 }
 
 .highlight {
@@ -22,12 +23,19 @@ h2, h3 {
 	height:50px;
 }
 
-.navbar-right {
+#ieee {
+	margin:20px;
+	height:20px;
+}
+
+.navbar-nav {
+	padding-left:20px;
+	padding-top:10px;
 	font-family: $font-family-sans-serif;
 	font-size:14pt;
 }
 
-.navbar-right a {
+.navbar-nav a {
 	color:#fff;
 }
 
