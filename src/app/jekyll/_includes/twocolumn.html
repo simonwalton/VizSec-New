@@ -26,17 +26,17 @@
 					{% endfor %}
 				</ul>	
 			</div>
-			<div>
+			<div class="sidebar_extraneous">
 				<h4>Past VizSec Events</h4>
 					<div>
-						<dl class="dl-horizontal vizsec-event-sidebar-list">
+						<dl class="dl-horizontal-xs vizsec-event-sidebar-list">
 						{% for event in site.data.pastyears %}
 						<dt><a href="#"><span class="label label-primary">{{ event.year }}</span></a></dt>
 						<dd><i>({{ event.location }})</i></dd>
 						{% endfor %}
 						</dl>
 					</div>
-					<a id="viewallevents" class="btn btn-default btn-sm " href="/past">View all past events</a>
+					<a id="viewallevents" class="btn btn-default btn-sm " href="/past">View all »</a>
 			</div>
 		</div>
 	</div>

@@ -5,6 +5,7 @@
 
 body {
   padding-top: floor(($navbar-height));
+  background: $vizsec_dark;
 }
 
 // headers are all sans serif; body is serif
@@ -21,7 +22,33 @@ h4 {
 	margin-bottom:10px;
 }
 
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+.container {
+	padding: 0px 40px 0px 40px;
+}
+
+.align-to-list {
+	margin-left: 1.8em;
+}
+
+li { 
+    padding-left: 1.8em; 
+    text-indent: -.7em;
+}
+
+li:before {
+    content: "» ";
+    color: $vizsec_dark; 
+}
+
 li.no-bullet {
+	content: "" !important;
+    list-style: none;
     list-style-type: none;
 }
 
@@ -33,33 +60,49 @@ li.no-bullet {
 	margin-top:20px;
 }
 
+// by default, the sidebar 'past years' list is hidden
+// it is invoked by page-specific css in the page's Liquid bits
+.sidebar_extraneous {
+	display:none;
+}
 
 // thanks to http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header
 .page-anchor {
-	padding-top: 90px; 
-	margin-top: -90px;
+	padding-top: 100px; 
+	margin-top: -100px;
 	display: inline-block; 
 	height:1px;
 }
 
 .footer {
-	padding: 20px;
-	text-align:center;
-	color: $vizsec_light;
-	margin-top:20px;
+	padding-top:50px;
+	background-color: $vizsec_light;
+}
+
+.footer > div {
+	border-top: 7px solid $vizsec_highlight; 
 	background-color: $vizsec_dark; 
 	height:80px;
-	border-top: 7px solid $vizsec_highlight; 
+	font-family: $font-family-sans-serif;
+	text-align:center;
+	color: $vizsec_light;
+	padding:30px;
+	margin-bottom:30px;
 }
 
 .page-content-default {
-	margin-top: 20px;
+	background: white;
+	padding-top:30px;
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active {
+.page-content {
+	background: white;
+}
+
+a:link:not(.btn),
+a:visited:not(.btn),
+a:hover:not(.btn),
+a:active:not(.btn) {
 	text-decoration: none;
 	border-bottom: 1px dotted $vizsec_dark;
 }
@@ -72,6 +115,7 @@ a:active {
 .btn {
 	font-family: $font-family-sans-serif; 
 }
+
 
 .jumbotron {
 	color:$vizsec_light;
@@ -88,6 +132,8 @@ a:active {
 .navbar-brand > img {
 	height:50px;
 }
+
+
 
 #ieee {
 	margin:20px;
@@ -110,7 +156,12 @@ a:active {
 	color:#fff;
 }
 
+.nav > li:before {
+	content: none;
+}
+
 .nav > li > a {
+	padding-left:0px;
 	padding-right:0px;
 }
 
@@ -148,17 +199,49 @@ a:active {
 
 #viewallevents {
 	margin-top:0px;
-	margin-left:70px;
+	margin-left:0px;
+	@media (min-width: $screen-sm) {
+		margin-left:70px;
+	}
 }
 
-.vizsec-event-sidebar-list > dd {
-	margin-left:70px;
+.dl-horizontal-xs {
+  dd {
+    @include clearfix; // Clear the floated `dt` if an empty `dd` is present
+  }
+
+  @media (min-width: $dl-horizontal-xs-offset) {
+    dt {
+      float: left;
+      width: ($dl-horizontal-xs-offset - 10);
+      clear: left;
+      text-align: right;
+      @include text-overflow;
+    }
+    dd {
+      margin-left: $dl-horizontal-xs-offset;
+    }
+  }
+}
+
+.dl-horizontal dd {
+}
+
+.dl-horizontal dd {
+	margin-left:0px;
+	@media (min-width: $screen-sm) {
+	    margin-left: 70px;
+	}
 }
 
 .vizsec-event-meta > dd {
 	border-bottom: 1px solid red;
 	padding:10px;
 	margin-bottom:10px;
+
+	@media (min-width: $screen-sm) {
+	    margin-left: 180px;
+	}
 }
 
 .vizsec-event-meta.title {
