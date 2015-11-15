@@ -8,6 +8,9 @@ url: "http://vizsec.org" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+paginate: 5
+paginate_path: "/blog/page:num/"
+
 # Build settings
 markdown: kramdown
 

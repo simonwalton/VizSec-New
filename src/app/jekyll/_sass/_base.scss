@@ -1,10 +1,19 @@
 
+/*
+	VizSec base SASS styling
+*/
+
+body {
+  padding-top: floor(($navbar-height));
+}
+
 // headers are all sans serif; body is serif
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-family-sans-serif;
 }
 
 h2, h3 {
+	margin-top:20px;
 	margin-bottom:20px;
 }
 
@@ -12,7 +21,26 @@ h4 {
 	margin-bottom:10px;
 }
 
+li.no-bullet {
+    list-style-type: none;
+}
 
+.vspace {
+	margin-top:10px;
+}
+
+.vspacebig {
+	margin-top:20px;
+}
+
+
+// thanks to http://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header
+.page-anchor {
+	padding-top: 90px; 
+	margin-top: -90px;
+	display: inline-block; 
+	height:1px;
+}
 
 .footer {
 	padding: 20px;
@@ -25,7 +53,7 @@ h4 {
 }
 
 .page-content-default {
-	margin-top: floor(($navbar-height + 50));
+	margin-top: 20px;
 }
 
 a:link,
@@ -47,8 +75,9 @@ a:active {
 
 .jumbotron {
 	color:$vizsec_light;
-	padding-top:100px;
+	padding-top:0px;
 	padding-bottom:20px;
+	margin:0px;
 	border-bottom: 7px solid $vizsec_highlight; 
 }
 
@@ -106,6 +135,24 @@ a:active {
 
 .committee.role {
 	font-style:italic;
+}
+
+.vizsec-event-sidebar-list > dt {
+	width:60px;
+}
+
+.vizsec-event-sidebar-list > dt > span {
+	width:50px;
+	display: inline-block;
+}
+
+#viewallevents {
+	margin-top:0px;
+	margin-left:70px;
+}
+
+.vizsec-event-sidebar-list > dd {
+	margin-left:70px;
 }
 
 .vizsec-event-meta > dd {

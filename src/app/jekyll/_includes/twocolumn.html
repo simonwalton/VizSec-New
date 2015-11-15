@@ -7,6 +7,7 @@
 		</div>
 		<div class="col-md-4 sidebar">
 			<div>
+				<a name="contact" class="page-anchor"></a>
 				<h4>Get in Touch</h4>
 				<p>
 				Email questions to <a href="mailto:vizsec2016@easychair.org">vizsec2016@easychair.org</a>, or you can post to our <a href="https://groups.google.com/forum/#!forum/vizsec">Google group.</a>
@@ -24,6 +25,18 @@
 					</li>
 					{% endfor %}
 				</ul>	
+			</div>
+			<div>
+				<h4>Past VizSec Events</h4>
+					<div>
+						<dl class="dl-horizontal vizsec-event-sidebar-list">
+						{% for event in site.data.pastyears %}
+						<dt><a href="#"><span class="label label-primary">{{ event.year }}</span></a></dt>
+						<dd><i>({{ event.location }})</i></dd>
+						{% endfor %}
+						</dl>
+					</div>
+					<a id="viewallevents" class="btn btn-default btn-sm " href="/past">View all past events</a>
 			</div>
 		</div>
 	</div>
