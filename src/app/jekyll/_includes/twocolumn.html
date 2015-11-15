@@ -5,10 +5,26 @@
 		<div class="col-md-8">
 			{{ content }}
 		</div>
-		<div class="col-md-4">
-			<h4>About</h4>
-			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-			<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+		<div class="col-md-4 sidebar">
+			<div>
+				<h4>Get in Touch</h4>
+				<p>
+				Email questions to <a href="mailto:vizsec2016@easychair.org">vizsec2016@easychair.org</a>, or you can post to our <a href="https://groups.google.com/forum/#!forum/vizsec">Google group.</a>
+				</p>
+				<p>
+				<img src="/assets/img/branding_twitter.png" id="twitter"/> Follow <a href="https://twitter.com/vizsec">@vizsec</a> on Twitter! 
+				</p>
+			</div>
+			<div>
+				<h4>Read our Blog</h4>
+				<ul>
+					{% for post in site.posts %}
+					<li>
+						<a href="{{ post.url }}">{{ post.title }}</a>
+					</li>
+					{% endfor %}
+				</ul>	
+			</div>
 		</div>
 	</div>
 </div>
