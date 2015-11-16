@@ -2,6 +2,7 @@
 module.exports = function (grunt) {
 	// load contributed tasks
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-html');
 	grunt.loadNpmTasks('grunt-jekyll');
 
 	// Project configuration.
@@ -26,6 +27,11 @@ module.exports = function (grunt) {
 					future: true
 				}
 			}
+		},
+		htmllint: {
+			all: ["<%= project.jekyll %>/_site/**/*.html",
+				'!<%= project.jekyll %>/_site/past/**',
+			]
 		},
 		// copies resources from our bower components directory to jekyll's assets
 		copy: {

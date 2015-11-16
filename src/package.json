@@ -1,7 +1,7 @@
 {
   "name": "vizsec.org",
   "version": "0.0.2",
-  "private": true,  
+  "private": true,
   "description": "vizsec.org web site",
   "homepage": "http://vizsec.org/",
   "author": "John Goodall <jgoodall@ornl.gov>",
@@ -17,7 +17,8 @@
   ],
   "devDependencies": {
     "grunt": "~0.4",
-    "grunt-jekyll": "^0.4.3",
-    "grunt-contrib-copy": "^0.8.2"
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-html": "^5.0.1",
+    "grunt-jekyll": "^0.4.3"
   }
 }
