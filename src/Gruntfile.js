@@ -37,11 +37,17 @@ module.exports = function (grunt) {
 		copy: {
 			bower_resources: {
 				src: ['bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js',
-					'bower_components/jquery/dist/jquery.min.js'
+					'bower_components/jquery/dist/jquery.min.js',
 				],
 				dest: '<%= project.jekyll %>/assets/js/',
 				flatten: true,
 				expand:true	
+			},
+			sass: {
+				src: ['bower_components/bootstrap-sass/assets/stylesheets/**'],
+				dest: '<%= project.jekyll %>/_sass/bootstrap/',
+				flatten:false,
+				
 			}
 		}
 	});
