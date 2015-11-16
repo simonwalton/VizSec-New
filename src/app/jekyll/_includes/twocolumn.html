@@ -31,8 +31,8 @@
 					<div>
 						<dl class="dl-horizontal-xs vizsec-event-sidebar-list">
 						{% for event in site.data.pastyears %}
-						<dt><a href="#"><span class="label label-primary">{{ event.year }}</span></a></dt>
-						<dd><i>({{ event.location }})</i></dd>
+						<dt><a href="{{ event.website }}"><span class="label label-primary">{{ event.year }}</span></a></dt>
+						<dd><i><small>({{ event.location }})</small></i></dd>
 						{% endfor %}
 						</dl>
 					</div>

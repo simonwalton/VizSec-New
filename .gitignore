@@ -3,6 +3,7 @@ src/node_modules/
 *.swp
 *.lock
 *.map
+*.swo
 src/app/jekyll/_site/
 src/bower_components
 src/deploy
