@@ -8,3 +8,8 @@ src/bower_components
 src/deploy
 src/.jekyll/
 src/.sass-cache/
+
+src/app/jekyll/_site
+src/app/jekyll/.jekyll-metadata
+
+
