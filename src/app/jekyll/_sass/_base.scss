@@ -7,7 +7,7 @@
 
 body {
   padding-top: floor(($navbar-height));
-  background: $vizsec_dark;
+  background: $vizsec_light;
 }
 
 // headers are all sans serif; body is serif
@@ -35,8 +35,8 @@ ul {
 	margin-right:10px;
 }
 
-.container {
-	padding: 0px 40px 0px 40px;
+.jumbotron {
+	padding: 0px 15px 0px 15px;
 }
 
 .align-to-list {
@@ -93,8 +93,7 @@ li.no-bullet {
 	font-family: $font-family-sans-serif;
 	text-align:center;
 	color: $vizsec_light;
-	padding:30px;
-	margin-bottom:30px;
+	padding:30px 0px 30px 0px;
 }
 
 .page-content-default {
@@ -136,9 +135,7 @@ a:active:not(.btn) {
 	color: $vizsec_highlight; 
 }
 
-.navbar-brand > img {
-	height:50px;
-}
+
 
 
 
@@ -150,6 +147,20 @@ a:active:not(.btn) {
 #twitter {
 	height:18px;
 	margin:-2px 8px 0px 20px;
+}
+.navbar-brand > img {
+	height:50px;
+}
+
+// the underlay stops inertia scrolling from showing whitespace 
+.navbar-underlay {
+	z-index:-1;
+	background-color: $vizsec_dark;
+	width:100%;
+	height: $navbar_height;
+	position:absolute;
+	top:0px;
+	left:0px;
 }
 
 .navbar-nav {
@@ -190,8 +201,8 @@ a:active:not(.btn) {
 }
 
 .steering-committee li {
-	break-inside: avoid-column;
-	-webkit-column-break-inside: avoid;
+//	break-inside: avoid-column;
+//	-webkit-column-break-inside: avoid;
 }
 
 .committee.name {
