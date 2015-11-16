@@ -193,18 +193,6 @@ a:active:not(.btn) {
 	padding-right:0px;
 }
 
-.steering-committee {
-	column-count:2;
-	-webkit-column-count: 2;
-	-moz-column-count: 2;
-	height:300px;
-}
-
-.steering-committee li {
-//	break-inside: avoid-column;
-//	-webkit-column-break-inside: avoid;
-}
-
 .committee.name {
 	font-weight:bold;
 }
