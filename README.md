@@ -1,14 +1,32 @@
 VizSec web site
 ===============
 
-All source files, including jade templates and css, image and javascript assets are in `src` directory.
+All source files are in the `src/jekyll` directory. The VizSec website uses [Jekyll](http://jekyllrb.com) to generate the raw html and resources, and Grunt is used to run Jekyll and watch for filesystem changes for easy development.
 
-To build the source files, you must have [Node.js](http://nodejs.org/) version `0.10.x` installed. To build the site from the templates, run:
+Changes will be forthcoming soon for deployment functionality.
 
-    cd src && ./build.sh    
+# 1) Non-managed Prerequisites
 
-Then push to github and the changes will be live.
+- [Node.js](http://nodejs.org/)
+- [Grunt](http://gruntjs.com) - `npm install -g grunt-cli`
+- [Bower](http://bower.io) - `npm install -g bower`
+- [Ruby](https://www.ruby-lang.org/en/) - Required by Jekyll; OSX already has Ruby, Linux and Windows don't. On Linux at least you'll need `apt-get instal ruby-dev` too for the headers
+- [Bundler](http://bundler.io/#getting-started) `gem install bundler`
+- [Jekyll](http://jekyllrb.com) - `gem install jekyll`
 
-# contact
+# 2) Setting up node/bower dependencies
 
-[John Goodall](http://jgoodall.me/), twitter [@johnrgoodall](https://twitter.com/#!/johnrgoodall)
+	cd src
+	npm install
+	bower install
+	bundle install
+        
+# 3) Generate & Run website
+
+	cd jekyll
+	grunt
+
+
+## Notes
+
+- Debian requires a symlink for node due to a silly executable name issue `ln -s /usr/bin/nodejs /usr/bin/node`

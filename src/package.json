@@ -1,6 +1,7 @@
 {
   "name": "vizsec.org",
   "version": "0.0.2",
+  "private": true,  
   "description": "vizsec.org web site",
   "homepage": "http://vizsec.org/",
   "author": "John Goodall <jgoodall@ornl.gov>",
