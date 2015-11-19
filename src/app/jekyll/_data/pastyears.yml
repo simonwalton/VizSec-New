@@ -74,9 +74,9 @@
 - year: 2007
   title: 4th International Workshop on Visualization for Cyber Security
   with: <a href='http://visweek.org/'>IEEE Vis Week</a>
-  location: Washington, DC, USA
-  date: November 3
-  website: http://www.cs.ucdavis.edu/~ma/VizSEC05/ 
+  location: Sacramento, CA
+  date: October 29
+  website: /past/vizsec2007/
   proceedings: http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=10259
 
 - year: 2006
@@ -84,6 +84,7 @@
   with: <a href='http://www.sigsac.org/ccs.html'>ACM CCS</a>
   location: Washington, DC, USA
   date: November 3
+  website: /past/vizsec2006/
   proceedings: http://dl.acm.org/citation.cfm?id=1179576
 
 - year: 2005
