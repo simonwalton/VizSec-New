@@ -39,6 +39,10 @@ ul {
 	padding: 0px 15px 0px 15px;
 }
 
+.jumbotron .btn {
+	margin-right:10px;
+}
+
 .align-to-list {
 	margin-left: 1.8em;
 }
@@ -134,10 +138,6 @@ a:active:not(.btn) {
 .highlight {
 	color: $vizsec_highlight; 
 }
-
-
-
-
 
 #ieee {
 	margin:20px;
