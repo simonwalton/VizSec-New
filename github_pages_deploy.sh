@@ -1,4 +1,5 @@
 
+rm -rf ../webdeploy/*
 cp -r src/app/jekyll/* ../webdeploy/
 cd ../webdeploy/
 git add *

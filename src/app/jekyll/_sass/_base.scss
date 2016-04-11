@@ -53,8 +53,8 @@ li {
 }
 
 li:before {
-    content: "\BB ";
-    color: $vizsec_dark; 
+    content: "\BB  ";
+    color: $vizsec_highlight; 
 }
 
 li.no-bullet {
@@ -277,4 +277,9 @@ a:active:not(.btn) {
 }
 
 .vizsec-event-meta.acceptance {
+}
+
+table.vizsec-cfp-dates tr td:first-child {
+	padding-right:10px;
+	text-align:right;
 }
