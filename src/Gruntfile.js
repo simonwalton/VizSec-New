@@ -10,9 +10,9 @@ module.exports = function (grunt) {
 		pkg: '<json:package.json>',
 		project: {
 			app: ['app'],
-			jekyll: ['<%= project.app %>/jekyll'],
-			assets: ['<%= project.jekyll %>/assets'],
-			sass: ['<%= project.assets %>/sass/_bootstrap_include.scss']
+			jekyll: ['../'],
+			assets: ['<%= project.app %>/assets'],
+			sass: ['<%= project.app %>/sass/_bootstrap_include.scss']
 		},
 		jekyll: {
 			options: { 
