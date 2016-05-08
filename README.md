@@ -1,11 +1,9 @@
 VizSec web site
 ===============
 
-All source files are in the `src/jekyll` directory. The VizSec website uses [Jekyll](http://jekyllrb.com) to generate the raw html and resources, and Grunt is used to run Jekyll and watch for filesystem changes for easy development.
+All source files are in the root directory to comply with [Github Pages](https://pages.github.com). The VizSec website uses [Jekyll](http://jekyllrb.com) to generate the raw html and resources.
 
-Changes will be forthcoming soon for deployment functionality.
-
-# 1) Non-managed Prerequisites
+# Prerequisites
 
 - [Node.js](http://nodejs.org/)
 - [Grunt](http://gruntjs.com) - `npm install -g grunt-cli`
@@ -14,19 +12,24 @@ Changes will be forthcoming soon for deployment functionality.
 - [Bundler](http://bundler.io/#getting-started) `gem install bundler`
 - [Jekyll](http://jekyllrb.com) - `gem install jekyll`
 
-# 2) Setting up node/bower dependencies
-
 	cd src
 	npm install
 	bower install
 	bundle install
-        
-# 3) Generate & Run website
 
-	cd jekyll
+# Deploying
+
+At the moment, an additional step is required for SASS updates (see below), but everything else is now managed by Jekyll. 
+
+	bundle install
+	jekyll build
+
+Will build the site into `_site`, as per Jekyll defaults. 
+
+Pushing the whole thing to a Github Pages-compliant repository will host the site there. 
+
+# Building SASS
+
+	cd src/
 	grunt
 
-
-## Notes
-
-- Debian requires a symlink for node due to a silly executable name issue `ln -s /usr/bin/nodejs /usr/bin/node`
