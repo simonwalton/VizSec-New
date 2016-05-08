@@ -5,12 +5,16 @@ All source files are in the root directory to comply with [Github Pages](https:/
 
 # Prerequisites
 
+## Install
+
 - [Node.js](http://nodejs.org/)
 - [Grunt](http://gruntjs.com) - `npm install -g grunt-cli`
 - [Bower](http://bower.io) - `npm install -g bower`
 - [Ruby](https://www.ruby-lang.org/en/) - Required by Jekyll; OSX already has Ruby, Linux and Windows don't. On Linux at least you'll need `apt-get instal ruby-dev` too for the headers
 - [Bundler](http://bundler.io/#getting-started) `gem install bundler`
 - [Jekyll](http://jekyllrb.com) - `gem install jekyll`
+
+## Setup
 
 	cd src
 	npm install
