@@ -1,6 +1,8 @@
 VizSec web site
 ===============
 
+![](screenshot.jpg?raw=true)
+
 All source files are in the root directory to comply with [Github Pages](https://pages.github.com). The VizSec website uses [Jekyll](http://jekyllrb.com) to generate the raw html and resources.
 
 # Prerequisites (if you don't have Jekyll)
