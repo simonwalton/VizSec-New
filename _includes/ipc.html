@@ -1,0 +1,18 @@
+
+<div class="row">
+	<a id="ipc" class="page-anchor"></a>
+	<div class="col-md-12">
+		<h3>International Program Committee</h3>
+		<ul>
+		{% for member in site.data.ipc %}
+			<li>
+				<span class="committee name">
+					{{ member.name }},
+				</span> 
+				<span class="committee affiliation">{{ member.affiliation }}</span>
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
+</div>
+

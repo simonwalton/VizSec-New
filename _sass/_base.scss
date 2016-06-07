@@ -193,6 +193,15 @@ a:active:not(.btn) {
 	padding-right:0px;
 }
 
+.ipc.name {
+	font-weight:bold;
+}
+
+.ipc.affiliation {
+	font-weight:bold;
+	color: $vizsec_highlight;
+}
+
 .committee.name {
 	font-weight:bold;
 }
